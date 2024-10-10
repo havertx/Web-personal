@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  background-color: #e2f1e7;
+}
+body {
+  font-family: "roboto", sans-serif;
+  margin: 0%;
+  padding: 0%;
+}
+
+h2,
+h3 {
+  color: #629584;
+}
+nav a {
+  font-size: 20px;
+
+  font-weight: 400;
+  text-decoration: none;
+
+  color: #e2f1e7;
+}
+
+nav a:hover {
+  font-weight: bold;
+  color: #629584;
+}
+
+.profie header {
+  text-align: center;
+}
+.profie img {
+  max-width: 300px;
+}
+
+.card {
+  box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+
+  padding: 20px;
+}
+.jumbotron {
+  font-size: 20px;
+  padding: 70px;
+  background-color: #243642;
+  text-align: center;
+  color: #e2f1e7;
+}
+nav ul {
+  padding-inline: 4rem;
+  display: flex;
+
+  gap: 2rem;
+}
+
+nav li {
+  list-style-type: none;
+}
+
+nav {
+  background-color: #387478;
+  padding: 5px;
+
+  position: sticky;
+  top: 0;
+}
+
+main {
+  padding: 20px;
+
+  display: flex;
+  gap: 1.5rem;
+}
+
+#content {
+  flex: 5;
+
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem 2rem;
+}
+aside {
+  flex: 1;
+}
+
+header {
+  display: inline;
+}
+footer {
+  color: #e2f1e7;
+  background-color: #243642;
+  text-align: center;
+  font-weight: bold;
+}
+@media screen and (max-width: 1000px) {
+  main {
+    flex-flow: column nowrap;
+  }
+  #content,
+  aside {
+    width: 100%;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  nav ul {
+    nav ul {
+      justify-content: center;
+    }
+  }
+  main aside {
+    align-self: stretch;
+  }
+}
